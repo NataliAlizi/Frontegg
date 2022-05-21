@@ -1,5 +1,4 @@
 import './App.css';
-// import { useEffect } from 'react';
 import { ContextHolder } from '@frontegg/rest-api';
 import { useAuth, useLoginWithRedirect,AdminPortal } from "@frontegg/react";
 import React from 'react';
@@ -9,12 +8,6 @@ function App() {
   const handleClick = () => {
     AdminPortal.show();
   };
-  // Uncomment this to redirect to login automatically
-  // useEffect(() => {
-  //   if (!isAuthenticated) {
-  // loginWithRedirect();
-  //   }
-  // }, [isAuthenticated, loginWithRedirect]);
 
   const logout = () => {
     const baseUrl = ContextHolder.getContext().baseUrl;
